@@ -95,7 +95,7 @@ namespace GitHubJwt.Tests
             var privateKeySource = new KeyVaultPrivateKeySource("https://myvault.vault.azure.net/secrets/my-secret/version", secretClient);
             var options = new GitHubJwtFactoryOptions
             {
-                AppIntegrationId = 1234,
+                AppIntegrationId = 6837,
                 ExpirationSeconds = 600 // 10 minutes maximum
             };
             var factory = new GitHubJwtFactory(privateKeySource, options);
