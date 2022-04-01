@@ -9,6 +9,11 @@ namespace GitHubJwt
         protected readonly Uri _secretUri;
         protected readonly SecretClient _client;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KeyVaultPrivateKeySource"/> class.
+        /// </summary>
+        /// <param name="secretUri">The secret URI. (https://myvault.vault.azure.net/secrets/my-secret/version)</param>
+        /// <param name="client">The secret client. <see cref="SecretClient"/></param>
         public KeyVaultPrivateKeySource(string secretUri, SecretClient client)
         {
             if (string.IsNullOrEmpty(secretUri))
